@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadProduct"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/pName"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:hint="Product Name"
+        android:layout_margin="5dp"
+        />
+    <EditText
+        android:id="@+id/pPrice"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:hint="Product Price"
+        android:layout_margin="5dp"
+        />
+    <EditText
+        android:id="@+id/pDesc"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:hint="Product Description"
+        android:layout_margin="5dp"
+        />
+    <Button
+        android:id="@+id/getImg"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Choose Product Image"
+        android:layout_margin="5dp"
+        />
+    <ImageView
+        android:id="@+id/pImg"
+        android:layout_height="300dp"
+        android:layout_width="300dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/subBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/add_ic" />
+
+    <ProgressBar
+        android:id="@+id/loadingBar"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:visibility="gone"
+        />
+</LinearLayout>
